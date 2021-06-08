@@ -8,7 +8,7 @@ function showImg(i) {
     src.appendChild(img);                       //append source to tag <img>
     setTimeout(function () {
         document.getElementById(a[i]).remove();         //delete pic after 2 sec
-    }, 2000);
+    }, 2800);
 }
 
 function showName(i) {
@@ -19,7 +19,7 @@ function showName(i) {
     document.getElementById("name").appendChild(para);           // Append <p> to <div> with id="name"
     setTimeout(function () {
         document.getElementById(b[i]).remove();
-    }, 2000);
+    }, 2800);
 }
 let i = 0;
 
@@ -27,9 +27,9 @@ function showArrayImg (){                   //show array of image after 3 sec
         setInterval(function(){
             document.getElementById("myProgress").style.display = "block";
             if (i < a.length) {
+                move();
                 showImg(i);
                 showName(i);
-                move();
                 i++;
             }
             else
@@ -53,7 +53,7 @@ function move() {     //progress bar
     if (k == 0) {
       k = 1;
       var elem = document.getElementById("myBar");
-      var width = 1;
+      var width = 10;
       var id = setInterval(frame, 20);
       function frame() {
         if (width >= 100) {
