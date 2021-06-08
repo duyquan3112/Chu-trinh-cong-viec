@@ -1,10 +1,25 @@
 #myProgress {
     width: 100%;
     background-color: #ddd;
+    border: 0px;
+    border-radius: 30px;
   }
   
-  #myBar {
+#myBar {
     width: 1%;
     height: 30px;
-    background-color: #04AA6D;
+    background-color: #1281e9;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border: 0px;
+    border-radius: 30px;
   }
+#image{
+    width: 300px;
+    height: 300px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}

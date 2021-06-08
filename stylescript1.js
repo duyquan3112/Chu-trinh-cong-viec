@@ -1,10 +1,10 @@
-var a = ["./step1.jpg", "./step2.png"];
-var b = ["Chọn mục tiêu","Xác định điểm yếu","Triệt hạ","Thu hoạch chiến lợi phẩm"];
+var a = ["./step1.png", "./step2.png","./step3.png","./step4.png","./step5.png","./step6.png"];
+var b = ["Chọn mục tiêu","Thu thập thông tin","Xác định điểm yếu","Triệt hạ","Thu hoạch chiến lợi phẩm","Bán chiến lợi phẩm"];
 function showImg(i) {
     var img = document.createElement("img");
     img.src = a[i];                             //create source
     img.id = a[i];                              //create id of each pic
-        var src = document.getElementById("image");
+    var src = document.getElementById("image");
     src.appendChild(img);                       //append source to tag <img>
     setTimeout(function () {
         document.getElementById(a[i]).remove();         //delete pic after 2 sec
@@ -44,9 +44,9 @@ function EventWhenNo(){
     document.getElementById("no").style.display = "none";
 }
 
-document.getElementById("no").onclick = function() {EventWhenNo()};
+document.getElementById("no").onclick = function() {EventWhenNo()};//event when click button no
 
-document.getElementById("myProgress").style.display = "none";
+document.getElementById("myProgress").style.display = "none"; //hide progress bar
 
 let k = 0;
 function move() {     //progress bar
@@ -62,6 +62,7 @@ function move() {     //progress bar
         } else {
           width++;
           elem.style.width = width + "%";
+          elem.innerHTML = width  + "%";
         }
       }
     }
