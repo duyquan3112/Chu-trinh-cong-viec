@@ -4,11 +4,10 @@
     border: 0px;
     border-radius: 30px;
   }
-  
 #myBar {
     width: 1%;
     height: 30px;
-    background-color: #1281e9;
+    background-color:firebrick;
     text-align: center;
     line-height: 30px;
     color: white;
@@ -16,7 +15,7 @@
     border-radius: 30px;
   }
 
-#image{
+#image  {
     width: 300px;
     height: 300px;
     margin: 0 auto;
@@ -27,5 +26,63 @@ img{
     width: 200px;
     height: 200px;
 }
-
-
+#name{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 58px;
+  text-align: center;
+  font-weight: bold;
+  color:firebrick;
+  background-color: white;
+  border-style: none;
+  border-radius: 20px;
+  line-height: 120%;
+  width: 65%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to left bottom,#e64f14,#dfdb1a);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 1px 2px 8px 8px rgba(0, 0, 0, 0.3);
+}
+#change{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+#yes{
+  font-weight: bold;
+  color:firebrick;
+  border-style: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 40px;
+  background-color: rgb(238, 142, 16);
+  margin: 5px;
+  box-shadow: 1px 2px 8px 8px rgba(0, 0, 0, 0.1);
+}
+#no{
+  font-weight: bold;
+  color:firebrick;
+  border-style: none;
+  border-radius: 5px;
+  height: 25px;
+  width: 40px;
+  background-color: rgb(238, 142, 16);
+  margin: 5px;
+  box-shadow: 1px 2px 8px 8px rgba(0, 0, 0, 0.1);
+}
+body{
+  background-image: url('background.png');
+  background-size: 100%;
+}
+#start{
+  color:firebrick;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 165px;
+  width: 330px;
+  background-image: linear-gradient(to left bottom,#e64f14,#dfdb1a);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 1px 2px 8px 8px rgba(0, 0, 0, 0.8);
+}
