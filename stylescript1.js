@@ -48,13 +48,13 @@ document.getElementById("no").onclick = function() {EventWhenNo()};//event when 
 
 document.getElementById("myProgress").style.display = "none"; //hide progress bar
 
-let k = 0;
+let k = 0; 
 function move() {     //progress bar
     if (k == 0) {
       k = 1;
       var elem = document.getElementById("myBar");
       var width = 10;
-      var id = setInterval(frame, 20);
+      var id = setInterval(frame, 30);
       function frame() {
         if (width >= 100) {
           clearInterval(id);
